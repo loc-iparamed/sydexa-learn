@@ -31,15 +31,12 @@ const SearchBar = ({
   isPending,
 }: {
   value: string;
-  onChange: (v: string) => void;
+  onChange: (value: string) => void;
   isPending: boolean;
 }) => {
   return (
     <div style={{ marginBottom: 16 }}>
-      <input
-        value={value}
-        onChange={e => onChange(e.target.value)}
-      />
+      <input value={value} onChange={e => onChange(e.target.value)} />
       {isPending && (
         <span style={{ marginLeft: 8 }} aria-live="polite">
           Loading…
