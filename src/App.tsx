@@ -36,8 +36,15 @@ const SearchBar = ({
 }) => {
   return (
     <div style={{ marginBottom: 16 }}>
-      <input value={value} onChange={e => onChange(e.target.value)} />
-      {isPending && <span style={{ marginLeft: 8 }}>Đang lọc…</span>}
+      <input
+        value={value}
+        onChange={e => onChange(e.target.value)}
+      />
+      {isPending && (
+        <span style={{ marginLeft: 8 }} aria-live="polite">
+          Loading…
+        </span>
+      )}
     </div>
   );
 };

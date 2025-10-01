@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   extends: [
-    '@react-native',
+    'react-app',
     'plugin:testing-library/react',
     'plugin:prettier/recommended',
   ],
@@ -26,9 +26,7 @@ module.exports = {
   rules: {
     'react/no-unstable-nested-components': 'off',
     'react-native/no-unused-styles': 'error',
-    'react-native/no-inline-styles': 'error',
     'react/jsx-curly-brace-presence': 'error',
-    'prettier/prettier': ['warn'],
     'testing-library/prefer-screen-queries': 'warn',
     'testing-library/no-unnecessary-act': 'warn',
     'testing-library/prefer-presence-queries': 'warn',
