@@ -32,7 +32,7 @@ const SearchBar = ({
   isPending,
 }: {
   value: string;
-  onChange: (_value: string) => void; // Renamed to _value to suppress unused warning
+  onChange: (_value: string) => void;
   isPending: boolean;
 }) => {
   return (
@@ -56,7 +56,7 @@ const ProductItem = React.memo(function ProductItem({
   product: Product;
   user?: User;
   liked: boolean;
-  onToggleLike: (_id: number) => void; // Renamed to _id to suppress unused warning
+  onToggleLike: (_id: number) => void;
 }) {
   return (
     <div
